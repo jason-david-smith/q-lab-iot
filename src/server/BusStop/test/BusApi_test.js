@@ -1,7 +1,7 @@
 
 import {expect} from 'chai';
 
-import BusApi from '../src/BusApi';
+import BusApi from '../BusApi';
 
 describe('Bus API Service', () =>{
     'use strict';
@@ -18,6 +18,7 @@ describe('Bus API Service', () =>{
         before(()=>{
             testResult = tested.getCurrentStopInfo('0001')
         });
+
 
         it('should return an object', () => {
             expect(testResult).to.be.a('object');
